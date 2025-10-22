@@ -18,7 +18,7 @@ Brave custom scriptlet that automatically collapses long ChatGPT messages you se
 chatgpt.com##+js(user-collapse-long-chatgpt-messages-brave-scriptlet.js)
 chat.openai.com##+js(user-collapse-long-chatgpt-messages-brave-scriptlet.js)
 ```
-7. Reload the page.
+6. Reload the page.
 
 
 ## Script
