@@ -11,17 +11,12 @@ Brave custom scriptlet that automatically collapses long ChatGPT messages you se
 ## Install (Brave Custom Scriptlet)
 1. Open `brave://settings/shields/filters`.
 2. Enable **Developer mode**.
-3. Click **Add new scriptlet**, name it exactly `collapse-long-chatgpt-messages-brave-scriptlet`, and paste the script below.
-4. Save. Brave stores it as **`user-collapse-long-chatgpt-messages-brave-scriptlet.js`**.
-5. In **Custom rules**, add:
+3. In **Custom filters**, add:
 ```javascript
 chatgpt.com##+js(user-collapse-long-chatgpt-messages-brave-scriptlet.js)
 chat.openai.com##+js(user-collapse-long-chatgpt-messages-brave-scriptlet.js)
 ```
-6. Reload the page.
-
-
-## Script
+4. Click **Add new scriptlet**, name it exactly **`collapse-long-chatgpt-messages-brave-scriptlet`**, and paste the script below:
 ```javascript
 (() => {
   'use strict';
@@ -181,3 +176,5 @@ chat.openai.com##+js(user-collapse-long-chatgpt-messages-brave-scriptlet.js)
   });
 })();
 ```
+5. Save. Brave stores it as **`user-collapse-long-chatgpt-messages-brave-scriptlet.js`**.
+6. Reload the page.
